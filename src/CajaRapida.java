@@ -9,5 +9,14 @@
  * @author Rey Hali
  */
 public class CajaRapida extends Caja{
+
+    public CajaRapida(String des) {
+        super(des);
+    }
+
+    @Override
+    public void realizarCobro() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
