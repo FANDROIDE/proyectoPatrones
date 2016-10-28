@@ -51,8 +51,10 @@ public class Fachada {
     }
     public void comenzarSimulacion(){
         System.out.println("se inicia la simulacion");
+        Datos m= Datos.getInstancia();
         while(!arrCajas.get(cr).vacio()){
             arrCajas.get(cr).realizarCobro();
+           // m.Actualizar("hola");
         }
     }
     

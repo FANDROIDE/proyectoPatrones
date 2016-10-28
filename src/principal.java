@@ -12,6 +12,5 @@ public class principal {
     public static void main(String args[]){
         Fachada f=new Fachada(1,2,40);
         f.comenzarSimulacion();
-    }
-    
+    }   
 }
