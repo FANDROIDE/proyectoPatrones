@@ -8,20 +8,20 @@
  *
  * @author feliciano
  */
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Random;
 
 public class Cliente {
-    int cantidad;
-    public LinkedList<Articulo> uno;
+    private ListaArticulos lista;
     public Cliente(){
-        ListaArticulos lista = new ListaArticulos();
+        lista = new ListaArticulos();
         Random rnd = new Random();
         int a=(int)(rnd.nextDouble()*20+5);
         for(int g=0;g<=a;g++){
             lista.add(new Articulo());
         }
-        uno=lista.laLista();
+        //uno=lista.laLista();
         int ll=(int)(rnd.nextDouble()*2+1);
         if(ll==1){
         //crear pago electronico
@@ -31,9 +31,20 @@ public class Cliente {
         } 
     }
     public int getNumArticulos(){
-    return uno.size();
+        Iterator<Articulo> i= lista.creaIterador();
+        int n=0;
+        while(i.hasNext()){
+            n++;
+            i.next();
+        }
+        return n;
     }
-    public LinkedList<Articulo> getLista(){
-    return uno;  
+    public int getTotal(){
+        Iterator<Articulo> i= lista.creaIterador();
+        int tot=0;
+        while(i.hasNext()){
+            tot+=i.next().getPrecio();
+        }
+        return tot;
     }
 }

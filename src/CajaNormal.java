@@ -20,9 +20,10 @@ public class CajaNormal extends Caja{
     @Override
     public void realizarCobro() {
         Iterator<Cliente> i=lista.creaIterador();
-        while(i.hasNext()){
-            
+        if(i.hasNext()){
+        Cliente c=i.next();
         }
+        
     }
     public void AgregarClientes(Cliente cliente){
         lista.add(cliente);
