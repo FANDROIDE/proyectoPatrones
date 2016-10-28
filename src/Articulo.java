@@ -14,7 +14,8 @@ public class Articulo {
     private int precio;
     public Articulo (){
          Random rnd = new Random();
-    this.precio=rnd.nextInt();
+         int a=(int)(rnd.nextDouble()*20010+10);
+    this.precio=a;
     }
     @Override
     public String toString(){

@@ -20,16 +20,29 @@ int total=0;
 
     @Override
     public void realizarCobro() {
+        // System.out.println("aqui esta2");
         Cliente a;
         Iterator<Cliente> i=lista.creaIterador();
-      while(i.hasNext()){
+      //while(i.hasNext()){
           a=i.next();
      
       total+=a.getTotal();
+      int aa=a.getPago();
+      int na=a.getNumArticulos();
+      try{
+         Thread.sleep(1000*aa+(na*80));
+     }
+      catch (Exception e){
+      }
+      lista.remove(a);
      //int aa=a.getPago();
      //sleep(aa);
-      
+      System.out.println("caja normal total pagado: "+total+" numero de articulos "+na+" metodo de pago:"+aa);
       }
+    //}
+    public boolean vacio(){
+        Iterator<Cliente> i=lista.creaIterador();
+        return !i.hasNext();
     }
     @Override
     public void AgregarClientes(Cliente cliente){

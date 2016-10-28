@@ -21,9 +21,12 @@ public class ListaClientes {
     clientes=new LinkedList<Cliente>();
     }
     
-    public void add(Cliente articulo){
-		clientes.add(articulo);
+    public void add(Cliente cliente){
+		clientes.add(cliente);
 	}
+    public void remove(Cliente cliente){
+        clientes.remove(cliente);
+    }
     public Iterator<Cliente> creaIterador(){
 		return new IteradorLista(clientes);
 	}

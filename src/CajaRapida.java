@@ -26,11 +26,24 @@ int total=0;
           a=i.next();
      
       total+=a.getTotal();
+      int aa=a.getPago();
+      int na=a.getNumArticulos();
+      try{
+         Thread.sleep(1000*aa+(na*50));
+     }
+      catch (Exception e){
+      }
       
     }
     }
      @Override
     public void AgregarClientes(Cliente cliente){
         lista.add(cliente);
+    }
+
+    @Override
+    public boolean vacio() {
+    Iterator<Cliente> i=lista.creaIterador();
+        return !i.hasNext();
     }
 }

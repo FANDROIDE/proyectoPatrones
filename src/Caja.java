@@ -15,4 +15,5 @@ public abstract class Caja {
     public Caja (String des){}
     public void AgregarClientes(Cliente cliente){}
     public abstract void realizarCobro();
+    public abstract boolean vacio();
 }
