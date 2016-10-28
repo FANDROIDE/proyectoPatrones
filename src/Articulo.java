@@ -1,3 +1,5 @@
+import java.util.Random;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -9,15 +11,16 @@
  * @author Rey Hali
  */
 public class Articulo {
-    private String nombre,cantidad;
-    private String precio;
-    public Articulo (String n, String c, String p){
-    this.nombre=n;
-    this.cantidad=c;
-    this.precio=p;
+    private int precio;
+    public Articulo (){
+         Random rnd = new Random();
+    this.precio=rnd.nextInt();
     }
     @Override
     public String toString(){
-    return "Nombre: "+this.nombre+"\tCantidad: "+this.cantidad+"\tPrecio "+this.precio;
+    return "";
+    }
+    public int getPrecio(){
+    return precio;
     }
 }

@@ -9,5 +9,17 @@
  * @author Rey Hali
  */
 public class CajaNormal extends Caja{
+
+    public CajaNormal(String des) {
+        super(des);
+    }
+
+    @Override
+    public void realizarCobro() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public void AgregarClientes(Cliente cliente){
+    
+    }
     
 }
