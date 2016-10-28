@@ -9,5 +9,5 @@
  * @author feliciano
  */
 public interface CrearCaja {
-    public Caja crearCaja(); 
+    public Caja crearCaja(String Desc);
 }

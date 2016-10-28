@@ -11,8 +11,8 @@
 public class CrearCajaNormal implements CrearCaja{
 
     @Override
-    public Caja crearCaja() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public Caja crearCaja(String Desc){
+    return new CajaNormal(Desc);
     }
     
 }
