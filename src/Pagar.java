@@ -9,8 +9,8 @@
  * @author feliciano
  */
 public class Pagar {
-    PagoE pago;
-    public int pago(){
+    PagoEfectivo pago;
+    public PagoEfectivo pago(){
         return pago;
     }
     

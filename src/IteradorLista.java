@@ -2,7 +2,7 @@
 import java.util.Iterator;
 import java.util.LinkedList;
 
-public class IteradorLista implements Iterator,MiIterador {
+public class IteradorLista implements Iterator{
 	private int indice=0;
 	private LinkedList<Articulo> conjunto;
 	public IteradorLista(LinkedList c){
@@ -17,16 +17,6 @@ public class IteradorLista implements Iterator,MiIterador {
 	public Object next() {
 		// TODO Auto-generated method stub
 		return conjunto.get(indice++);
-	}
-	@Override
-	public Object primero() {
-		// TODO Auto-generated method stub
-		return conjunto.get(0);
-	}
-	@Override
-	public Object ultimo() {
-		// TODO Auto-generated method stub
-		return conjunto.get(conjunto.size()-1);
 	}
         
 	public String MostrarRango(int i, int j) {

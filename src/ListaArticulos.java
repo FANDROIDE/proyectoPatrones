@@ -30,14 +30,6 @@ public class ListaArticulos {
            IteradorLista u= (IteradorLista) creaIterador();
             System.out.println(u.MostrarRango(i, j));
         }
-         public void primero(){
-           IteradorLista u= (IteradorLista) creaIterador();
-             System.out.println(u.primero().toString());
-        }
-         public void ultimo(){
-           IteradorLista u= (IteradorLista) creaIterador();
-             System.out.println(u.ultimo().toString());
-        }
         
     public LinkedList laLista(){
     return articulos;

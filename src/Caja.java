@@ -9,9 +9,9 @@
  * @author Rey Hali
  */
 public abstract class Caja {
-    private String descripcion;
-    private int numMaxArticulos;
-    private ListaClientes lista;
+    protected String descripcion;
+    protected int numMaxArticulos;
+    protected ListaClientes lista;
     public Caja (String des){}
     public void AgregarClientes(Cliente cliente){}
     public abstract void realizarCobro();

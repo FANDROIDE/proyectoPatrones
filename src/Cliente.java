@@ -28,8 +28,7 @@ public class Cliente {
         }
         else{
         //crear pago monetario
-        }
-      
+        } 
     }
     public int getNumArticulos(){
     return uno.size();
