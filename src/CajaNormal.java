@@ -13,32 +13,41 @@ import java.util.LinkedList;
  */
 public class CajaNormal extends Caja{
 int total=0;
+int na=0;
+int tiempo=0;
     public CajaNormal(String des) {
         super(des);
         lista=new ListaClientes();
     }
 
     @Override
-    public void realizarCobro() {
-        // System.out.println("aqui esta2");
+    public String realizarCobro() {
+        String s="";
         Cliente a;
         Iterator<Cliente> i=lista.creaIterador();
-      //while(i.hasNext()){
           a=i.next();
-     
       total+=a.getTotal();
       int aa=a.getPago();
-      int na=a.getNumArticulos();
+      na=a.getNumArticulos();
       try{
          Thread.sleep(1000*aa+(na*80));
+         tiempo+=1000*aa+(na*80);
      }
       catch (Exception e){
       }
       lista.remove(a);
-     //int aa=a.getPago();
-     //sleep(aa);
-      System.out.println("caja normal total pagado: "+total+" numero de articulos "+na+" metodo de pago:"+aa);
-      }
+      s="caja normal total pagado: "+total+" numero de articulos "+na+" metodo de pago:"+aa;
+    return s;  
+    }
+    public int getTotal(){
+      return total;
+    }
+    public int getTotalArticulos(){
+      return na;
+    }
+    public int getTiempo(){
+        return tiempo;
+    };
     //}
     public boolean vacio(){
         Iterator<Cliente> i=lista.creaIterador();

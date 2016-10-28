@@ -13,28 +13,31 @@ import java.util.Iterator;
  */
 public class CajaRapida extends Caja{
 int total=0;
+int na=0;
+int tiempo=0;
     public CajaRapida(String des) {
         super(des);
         lista=new ListaClientes();
     }
 
     @Override
-    public void realizarCobro() {
-     Cliente a;
+    public String realizarCobro() {
+        String s="";
+       Cliente a;
         Iterator<Cliente> i=lista.creaIterador();
-      while(i.hasNext()){
           a=i.next();
-     
       total+=a.getTotal();
       int aa=a.getPago();
-      int na=a.getNumArticulos();
+      na=a.getNumArticulos();
       try{
          Thread.sleep(1000*aa+(na*50));
+         tiempo+=1000*aa+(na*50);
      }
       catch (Exception e){
       }
-      
-    }
+      lista.remove(a);
+      s="caja rapida total pagado: "+total+" numero de articulos "+na+" metodo de pago:"+aa;
+     return s; 
     }
      @Override
     public void AgregarClientes(Cliente cliente){
@@ -45,5 +48,15 @@ int total=0;
     public boolean vacio() {
     Iterator<Cliente> i=lista.creaIterador();
         return !i.hasNext();
+    }
+     public int getTotal(){
+      return total;
+    }
+     
+    public int getTiempo(){
+        return tiempo;
+    };
+    public int getTotalArticulos(){
+      return na;
     }
 }

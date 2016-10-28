@@ -8,8 +8,9 @@
  *
  * @author feliciano
  */
-public class Datos extends javax.swing.JFrame {
+public class Datos extends javax.swing.JFrame implements Runnable {
     private static Datos instancia;
+    private String dato="";
     public static Datos getInstancia(){
 		if(instancia==null){
 			instancia=new Datos();
@@ -22,13 +23,12 @@ public class Datos extends javax.swing.JFrame {
      * Creates new form Datos
      */
     public Datos() {
-        initComponents();
-        this.setVisible(true);
-        
+        //initComponents();
+        //this.setVisible(true);
     }
     public void Actualizar(String s){
-        jTextArea1.setText(s+"\n");
-        
+        dato+=s+"\n";
+        jTextArea1.setText(dato);
     }
 
     /**
@@ -79,4 +79,11 @@ public class Datos extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea1;
     // End of variables declaration//GEN-END:variables
+
+    @Override
+    public void run() {
+        initComponents();
+        this.setVisible(true);
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

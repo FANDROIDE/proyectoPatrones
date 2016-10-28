@@ -18,7 +18,7 @@ public class Cliente {
     public Cliente(){
         lista = new ListaArticulos();
         Random rnd = new Random();
-        int a=(int)(rnd.nextDouble()*20+5);
+        int a=(int)(rnd.nextDouble()*20+1);
         for(int g=0;g<=a;g++){
             lista.add(new Articulo());
         }

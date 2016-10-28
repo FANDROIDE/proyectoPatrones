@@ -9,14 +9,12 @@
  * @author feliciano
  */
 public class principal2 extends javax.swing.JFrame{
-
     /**
      * Creates new form principal2
      */
     public principal2() {
         initComponents();
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -27,7 +25,6 @@ public class principal2 extends javax.swing.JFrame{
     private void initComponents() {
 
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -38,8 +35,6 @@ public class principal2 extends javax.swing.JFrame{
             }
         });
 
-        jButton2.setText("Mostrar Resultados");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -47,17 +42,13 @@ public class principal2 extends javax.swing.JFrame{
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap(171, Short.MAX_VALUE)
                 .addComponent(jButton1)
-                .addGap(169, 169, 169)
-                .addComponent(jButton2)
-                .addGap(134, 134, 134))
+                .addGap(431, 431, 431))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(65, 65, 65)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2))
+                .addComponent(jButton1)
                 .addContainerGap(316, Short.MAX_VALUE))
         );
 
@@ -66,7 +57,7 @@ public class principal2 extends javax.swing.JFrame{
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        Fachada f=new Fachada(1,2,40);
+        Fachada f=new Fachada(10);
         f.comenzarSimulacion();
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -107,7 +98,6 @@ public class principal2 extends javax.swing.JFrame{
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     // End of variables declaration//GEN-END:variables
 
  

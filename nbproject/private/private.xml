@@ -5,16 +5,23 @@
         <group>
             <file>file:/home/feliciano/Descargas/patronesApp/src/CajaRapida.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/Cliente.java</file>
+            <file>file:/home/feliciano/Descargas/patronesApp/src/IteradorLista.java</file>
+            <file>file:/home/feliciano/Descargas/patronesApp/src/MiIterador.java</file>
+            <file>file:/home/feliciano/Descargas/patronesApp/src/principal2.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/ListaArticulos.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/Pago.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/Caja.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/CrearCajaNormal.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/PagoTarjeta.java</file>
+            <file>file:/home/feliciano/Descargas/patronesApp/src/Fachada.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/PagoEfectivo.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/CajaNormal.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/ListaClientes.java</file>
+            <file>file:/home/feliciano/Descargas/patronesApp/src/PagarConTarjeta.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/Articulo.java</file>
+            <file>file:/home/feliciano/Descargas/patronesApp/src/Datos.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/Pagar.java</file>
+            <file>file:/home/feliciano/Descargas/patronesApp/src/PagarConEfectivo.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/CrearCaja.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/creaCaja.java</file>
             <file>file:/home/feliciano/Descargas/patronesApp/src/CrearCajaRapida.java</file>

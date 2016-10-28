@@ -14,6 +14,9 @@ public abstract class Caja {
     protected ListaClientes lista;
     public Caja (String des){}
     public void AgregarClientes(Cliente cliente){}
-    public abstract void realizarCobro();
+    public abstract String realizarCobro();
+    public abstract int getTotal();
+    public abstract int getTotalArticulos();
+    public abstract int getTiempo();
     public abstract boolean vacio();
 }
