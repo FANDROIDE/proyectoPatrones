@@ -14,6 +14,7 @@ import java.util.Random;
 
 public class Cliente {
     private ListaArticulos lista;
+    private Pagar p;
     public Cliente(){
         lista = new ListaArticulos();
         Random rnd = new Random();
@@ -24,10 +25,12 @@ public class Cliente {
         //uno=lista.laLista();
         int ll=(int)(rnd.nextDouble()*2+1);
         if(ll==1){
-        //crear pago electronico
+        //crear pago Tarjeta
+            p=new PagarConTarjeta();
         }
         else{
-        //crear pago monetario
+        //crear pago efectivo
+            p=new PagarConEfectivo();
         } 
     }
     public int getNumArticulos(){
@@ -46,5 +49,8 @@ public class Cliente {
             tot+=i.next().getPrecio();
         }
         return tot;
+    }
+    public int getPago(){
+        return p.RealizarPago();
     }
 }

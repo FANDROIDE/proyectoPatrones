@@ -8,13 +8,13 @@
  *
  * @author feliciano
  */
-public abstract class Pagar {
-    Pago tipoPago;
-    public Pagar(){
+public class PagarConEfectivo extends Pagar{
+        Pago pago;
+    public PagarConEfectivo(){
+        pago=new PagoEfectivo();
     }
     public int RealizarPago(){
-        return 0;
+        return pago.pagar();
     }
-    
     
 }
